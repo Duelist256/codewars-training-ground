@@ -1,4 +1,4 @@
-package first
+package codewars
 
 import org.scalatest.FunSuite
 

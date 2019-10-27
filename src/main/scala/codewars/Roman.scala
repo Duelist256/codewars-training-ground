@@ -1,4 +1,4 @@
-package first
+package codewars
 
 object Roman {
   def decode(roman: String): Int =

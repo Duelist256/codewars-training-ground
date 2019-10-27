@@ -1,4 +1,4 @@
-package first
+package codewars
 
 object PyramidArray {
   def pyramid(n: Int): List[List[Int]] = {

@@ -1,4 +1,4 @@
-name := "codewars-training-ground"
+name := "scala-problem-solutions"
 
 version := "0.1"
 
