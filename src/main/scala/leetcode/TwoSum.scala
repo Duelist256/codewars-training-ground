@@ -17,8 +17,4 @@ object TwoSum {
 
     Array.empty
   }
-
-  def main(args: Array[String]): Unit = {
-
-  }
 }
