@@ -5,7 +5,23 @@ public class SwapNodesInPairs {
     static class ListNode {
         int val;
         ListNode next;
-        ListNode(int x) { val = x; }
+
+        ListNode(int x) {
+            val = x;
+        }
+
+        public static ListNode of(int... elems) {
+            if (elems.length == 0) return null;
+            else {
+                ListNode result = new ListNode(elems[0]);
+                ListNode ptr = result;
+                for (int i = 1; i < elems.length; i++) {
+                    ptr.next = new ListNode(elems[i]);
+                    ptr = ptr.next;
+                }
+                return result;
+            }
+        }
 
         @Override
         public boolean equals(Object obj) {
@@ -42,18 +58,5 @@ public class SwapNodesInPairs {
                 processRest(src.next.next, target.next.next);
             }
         }
-    }
-
-    public static void main(String[] args) {
-        SwapNodesInPairs snip = new SwapNodesInPairs();
-        ListNode node = new ListNode(1);
-        ListNode node2 = new ListNode(2);
-        node.next = node2;
-        ListNode node3 = new ListNode(3);
-        node2.next = node3;
-        ListNode node4 = new ListNode(4);
-        node3.next = node4;
-
-        snip.swapPairs(node);
     }
 }
