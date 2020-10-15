@@ -6,9 +6,4 @@ object DesignerPdfViewer {
     val wordHeights = word.map(ch => h(ch - 97))
     word.length * wordHeights.max
   }
-
-  def main(args: Array[String]): Unit = {
-    println('a')
-    println()
-  }
 }
